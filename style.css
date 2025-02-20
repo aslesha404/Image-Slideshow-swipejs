@@ -1,0 +1,99 @@
+.main{
+    width: 100%;
+    height: 100vh;
+}
+.wrapper .slid {
+    width: 100%;
+    height: 100vh;
+}
+.slid .iamge{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image_detail{
+    position: absolute;
+    top: 50%;
+    left: 50%; z-index: 2;
+    transform: translate(-50% ,-50%);
+}
+.image_detail h2{
+    font-size: 1rem;
+text-align: center;
+    color: white;  
+}
+.image_detail p{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-left: 20px;
+    font-weight: bolder;
+    color: white;
+}
+.image_detail  button{
+padding: 10px;
+left: 40%;
+padding-left: 40px;
+padding-right: 40px;
+position: absolute;
+border: none;
+outline: none;
+cursor: pointer;
+color: #382315;
+background-color: #d8cec6;
+border-radius: 10px;
+}
+.image_detail  button:hover{
+    color: #d8cec6;
+background-color: #785940;
+}
+.slid {
+    position: relative; /* Required for absolute positioning inside */
+    width: 100%;
+    height: 100vh;
+}
+
+.slid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);                /*for creating transpareny cover on img
+    z-index: 1; /* Sits above image, below text */
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire slide */
+}
+/* swiper btn */
+
